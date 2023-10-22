@@ -118,7 +118,7 @@ Table of Contents
 
 1.2.  The Solution
 
-   The Philantropist framework proposes to standardize the collection,
+   The Philatelist framework proposes to standardize the collection,
    definitions of the quantities measured and meta data handling to
    provide a robust ground layer for telemetry collection.  The
    architecture defines a few interfaces, but allows great freedom in
@@ -429,6 +429,11 @@ Table of Contents
    Aggregator components take multiple incoming data flows and combine
    them, typically by adding them together, taking possible differences
    in cadence in the input data flows into account.
+
+   Processor and Aggregator components provide a YANG model of the
+   output data, just like the Collector components, so that all data
+   flowing in the system has a YANG description and is associated with
+   metadata.
 
    Note: In the current version of the YANG modules, a Processor is
    simply an Aggregator with a single input and output.  Unless we see a
